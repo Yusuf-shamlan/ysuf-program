@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yousef program</title>
+</head>
+<body>
+    <h1>Enter your name</h1>
+    <input type="text" id="userin" > <br>
+    <button onclick="order()">Enter</button>
+    <h2 id="message"></h2>
+
+    <style>
+        body { text-align: right; font-size: xx-large; text-align: center;}
+        button {padding: 1%;}
+    </style>
+
+    <script>
+    function order(){
+        let userin = document.querySelector("#userin");
+        let messaage = document.querySelector("#message");
+
+        messaage.innerHTML = " Welcom " + userin.value;
+    }
+    </script>
+</body>
+</html>
